@@ -1,0 +1,194 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+.universo{
+  background-image: linear-gradient(to top , #1B2A4A , #111E38, #0B0B0C 70%);
+  width: 1000vw;
+  min-width: 7000px;
+  height: 100vh;
+  position: relative;
+}
+.estrela{
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  background-color: white;
+  border-radius: 50%;
+  animation: piscar 2s infinite;
+}
+
+.sistema{
+  position:relative;
+  width: 7000px;
+  height: 100vh
+  
+}
+
+.sol{
+  position: absolute;
+  top: -5%;
+  left: -400px;
+  height: 800px;
+  width: 800px;
+  filter: drop-shadow( 0 0 10px white);
+  z-index: 2;
+}
+.planeta{
+  transition: transform 0.4s ease;
+position: absolute;
+border-radius: 50%;
+  z-index: 2;
+}
+.planeta:hover{
+transform: scale(1.08) rotate(25deg);
+
+}
+
+.mercurio{
+  filter: drop-shadow(0 0 5px #d1b1f7);
+  width: 120px;
+  height: 120px;
+  left: 7%;
+  top: 40vh;
+
+}
+.venus{
+  filter: drop-shadow(0 0 5px #ffda8a);
+  width: 220px;
+  height: 220px;
+  left: 15%;
+  top: 5vh;
+
+}
+.terra{
+  filter: drop-shadow(0 0 5px #2bbfe1);
+  width: 300px;
+  height: 300px;
+  left: 26%;
+  top: 50vh;
+
+}
+.marte{
+  filter: drop-shadow(0 0 5px #ee6627);
+  height: 160px;
+  left: 40%;
+  top: 30vh;
+
+}
+
+.jupiter{
+width: 400px;
+height: 400px;
+left: 50%;
+top: 40vh;
+filter: drop-shadow(0 0 5px #D99A5B);
+}
+
+.saturno{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  left: 60%;
+  top: 10vh;
+  filter: drop-shadow(0 0 5px #D8C58A);
+}
+
+.urano {
+  width: 210px;
+  height: 210px;
+  left: 70%;
+  top: 40vh;
+  filter: drop-shadow(0 0 2px #65D9E8);
+}
+
+.netuno{
+  width: 200px;
+  height: 200px;
+  left: 80%;
+  top: 10vh;
+  filter: drop-shadow(0 0 2px #2875E8);
+}
+.plutao{
+  width: 110px;
+  height: 110px;
+  left: 87%;
+  top: 30vh;
+  
+}
+
+
+.estacao {
+  position: absolute;
+  width: 130px;
+  height: auto;
+  left: 97%;
+  top: 10vh;
+  z-index: 5;
+  cursor: pointer;
+
+  transform-origin: center;
+  animation: flutuarEstacao 6s ease-in-out infinite;
+}
+
+@keyframes flutuarEstacao {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+
+
+
+@keyframes piscar{
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  
+}
+
+.tituloMissao{
+  position: fixed;
+  z-index: 10;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: white;
+  font-family: monospace;
+  font-size: 10vw;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  
+  text-shadow: 0 0 5px #0B0B0C, 0 0 10px #0B0B0C;
+  
+  animation: desaparecer 3s ease forwards;
+  animation-delay: 2s;
+  
+}
+
+@keyframes desaparecer{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+  
+}

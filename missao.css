@@ -1,0 +1,169 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 18px;
+  background:
+    radial-gradient(ellipse at top, #172e4d 0%, #0b1425 45%, #05080f 100%);
+  color: #dce8ef;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
+
+.estacao-interior {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: rgba(8, 19, 32, 0.88);
+  border: 1px solid #31576a;
+  border-radius: 12px;
+  box-shadow:
+    0 0 25px rgba(47, 205, 180, 0.08),
+    inset 0 0 25px rgba(47, 205, 180, 0.025);
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 10px 0 28px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #31576a;
+}
+
+.identificacao {
+  color: #65e6cb;
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.cabecalho h1 {
+  color: #f0fbff;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  line-height: 1.25;
+  letter-spacing: 2px;
+  margin: 18px 0 10px;
+  text-shadow: 0 0 15px rgba(101, 230, 203, 0.2);
+}
+
+.subtitulo {
+  color: #91aabd;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.registro {
+  padding: 8px 0 24px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(80, 128, 145, 0.3);
+}
+
+.registro h2 {
+  color: #65e6cb;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.registro p,
+.encerramento p {
+  font-size: 1rem;
+  margin: 0 0 18px;
+  text-align: left;
+}
+
+.encerramento {
+  padding: 25px 0 10px;
+}
+
+.encerramento > .identificacao {
+  text-align: center;
+}
+
+.encerramento h2 {
+  text-align: center;
+  color: #65e6cb;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  letter-spacing: 2px;
+  margin: 12px 0 25px;
+  text-shadow: 0 0 15px rgba(101, 230, 203, 0.2);
+}
+
+.encerramento h3 {
+  color: #f0fbff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.frase-final {
+  margin: 30px 0 !important;
+  padding: 20px;
+  border-left: 3px solid #65e6cb;
+  background: rgba(101, 230, 203, 0.07);
+  color: #a9ffeb;
+  font-size: 1.15rem !important;
+  font-weight: bold;
+}
+
+.despedida {
+  color: #a9ffeb;
+  font-weight: bold;
+}
+
+.botao-voltar {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 30px auto 5px;
+  padding: 12px 22px;
+  border: 1px solid #65e6cb;
+  border-radius: 6px;
+  color: #a9ffeb;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.botao-voltar:hover {
+  background: #65e6cb;
+  color: #07131c;
+  box-shadow: 0 0 18px rgba(101, 230, 203, 0.25);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  .estacao-interior {
+    padding: 22px 18px;
+  }
+
+  .cabecalho h1 {
+    letter-spacing: 1px;
+  }
+
+  .identificacao {
+    letter-spacing: 2px;
+  }
+
+  .registro p,
+  .encerramento p {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .frase-final {
+    padding: 15px;
+  }
+}
+
+
