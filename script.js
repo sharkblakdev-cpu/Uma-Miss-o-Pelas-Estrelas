@@ -61,7 +61,7 @@ planeta.forEach(function(planeta){
         if(planeta.classList.contains("mercurio")){
             
             texto.textContent = "Mercúrio é o planeta mais próximo do Sol e também o menor dos oito planetas do Sistema Solar. Sua superfície é coberta por muitas crateras, formadas principalmente por impactos de asteroides e outros objetos ao longo de bilhões de anos. Apesar de estar perto do Sol, Mercúrio não é o planeta mais quente do Sistema Solar, porque possui uma atmosfera extremamente fina e quase não consegue reter calor. Por isso, sua temperatura varia muito entre o dia e a noite, podendo ficar extremamente quente durante o dia e muito fria durante a noite. Mercúrio também possui um grande núcleo metálico em comparação com seu tamanho e apresenta um campo magnético. Um dia solar em Mercúrio dura cerca de 176 dias terrestres, enquanto sua volta ao redor do Sol leva apenas 88 dias terrestres.";
-            cabeca.textContent = "REGISTTO: Mercúrio";
+            cabeca.textContent = "REGISTRO: Mercúrio";
         }
         if(planeta.classList.contains("venus")){
             
