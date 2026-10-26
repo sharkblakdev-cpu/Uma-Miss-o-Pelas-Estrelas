@@ -10,7 +10,7 @@ html, body{
 
 .universo{
   background-image: linear-gradient(to top , #1B2A4A , #111E38, #0B0B0C 70%);
-  width: 1000vw;
+  width: 7000px;
   min-width: 7000px;
   height: 100vh;
   position: relative;
