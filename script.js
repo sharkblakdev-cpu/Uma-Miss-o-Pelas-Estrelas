@@ -26,12 +26,29 @@ planeta.forEach(function(planeta){
     }
     
     caixa = document.createElement("div");
-   caixa.style.position = "fixed";
-caixa.style.bottom = "10px";
-caixa.style.left = "50%";
-caixa.style.transform = "translateX(-50%)";
-caixa.style.width = "85vw";
-caixa.style.height = "50vh";
+   
+caixa.style.position = "fixed";
+caixa.style.zIndex = "10";
+caixa.style.boxSizing = "border-box";
+
+if (window.innerWidth >= 768) {
+    // Computador
+    caixa.style.width = "320px";
+    caixa.style.height = "220px";
+    caixa.style.right = "20px";
+    caixa.style.left = "auto";
+    caixa.style.bottom = "20px";
+    caixa.style.transform = "none";
+} else {
+    // Celular — mantém o comportamento anterior
+    caixa.style.width = "85vw";
+    caixa.style.height = "50vh";
+    caixa.style.left = "50%";
+    caixa.style.right = "auto";
+    caixa.style.bottom = "10px";
+    caixa.style.transform = "translateX(-50%)";
+}
+
         caixa.style.background = "rgba(0, 80, 30, 0.7)";
         caixa.style.border = "2px solid #39ff7a";
         caixa.style.zIndex = "10";
