@@ -192,3 +192,24 @@ filter: drop-shadow(0 0 5px #D99A5B);
   }
   
 }
+
+.caixa-planeta {
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: 85vw;
+  height: 50vh;
+}
+
+
+@media (min-width: 768px) {
+  .caixa-planeta {
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    transform: none;
+    width: 380px;
+    height: 260px;
+    max-width: calc(100vw - 40px);
+  }
+}
