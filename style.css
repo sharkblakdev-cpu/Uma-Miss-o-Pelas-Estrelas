@@ -160,25 +160,25 @@ filter: drop-shadow(0 0 5px #D99A5B);
   
 }
 
-.tituloMissao{
+
+.tituloMissao {
   position: fixed;
   z-index: 10;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
   color: white;
   font-family: monospace;
-  font-size: 10vw;
+  font-size: clamp(28px, 6vw, 80px);
   font-weight: bold;
   text-align: center;
-  white-space: nowrap;
-  
+  width: 90%;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
   text-shadow: 0 0 5px #0B0B0C, 0 0 10px #0B0B0C;
-  
   animation: desaparecer 3s ease forwards;
   animation-delay: 2s;
-  
 }
 
 @keyframes desaparecer{
