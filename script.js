@@ -26,16 +26,15 @@ planeta.forEach(function(planeta){
     }
     
     caixa = document.createElement("div");
-    caixa.style.position = "fixed";
-    caixa.style.bottom = "10px";
-    caixa.style.left = "50%";
-    caixa.style.transform = "translateX(-50%)";
-    caixa.style.width = "85vw";
-    caixa.style.height = "50vh";
-    caixa.style.background = "rgba(0, 80, 30, 0.7)";
-    caixa.style.border = "2px solid #39ff7a";
-    caixa.style.zIndex = "10";
-
+    caixa.classList.add("caixa-planeta");
+        caixa.style.position = "fixed";
+        caixa.style.zIndex = "10";
+        caixa.style.background = "rgba(0, 80, 30, 0.7)";
+        caixa.style.border = "2px solid #39ff7a";
+        caixa.style.boxSizing = "border-box";
+        caixa.style.background = "rgba(0, 80, 30, 0.7)";
+        caixa.style.border = "2px solid #39ff7a";
+        caixa.style.zIndex = "10";
     const cabeca = document.createElement("div");
     cabeca.textContent = "NENHUM PLANETA IDENTIFICADO!";
     
